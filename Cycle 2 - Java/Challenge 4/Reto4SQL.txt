@@ -1,0 +1,5 @@
+select nombre, inventario from productos where precio >=9000;
+select avg(precio) as promedio from productos;
+select nombre, precio from productos where nombre like "A%" or nombre like "P%" order by nombre asc;
+select count(nombre) as total from productos where precio >=3000 and precio <=10000;
+select sum(precio*inventario) as total_inventario from productos;

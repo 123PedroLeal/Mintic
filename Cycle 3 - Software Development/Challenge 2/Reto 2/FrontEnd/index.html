@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<!-- Este es el titulo de la pestana-->
+<title>Grupo 0</title>
+</head>
+
+<!-- Este es la conexion con el googleapi de ajax -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- Este es la conexion con el archivo de JavaScript para poder conectar las funciones-->
+<script type="text/javascript" src="JavaScript/ScriptClientes.js"></script>
+<script type="text/javascript" src="JavaScript/ScriptMensajes.js"></script>
+<script type="text/javascript" src="JavaScript/ScriptNubes.js"></script>
+
+<body>
+    <h1>Nubes Grupo 0</h1>
+
+    <input type="number" id="IdNube" placeholder="Id de la Nube" style="width : 390px; height : 15px"><br>
+    <input type="text" id="MarcaNube" placeholder="Marca de la Nube" style="width : 390px; height : 15px"><br>
+    <input type="number" id="ModeloNube" placeholder="Modelo de la Nube" style="width : 390px; height : 15px"><br>
+    <input type="number" id="IdCategoria" placeholder="Numero de Categoria de la Nube" style="width : 390px; height : 15px"><br>
+    <input type="text" id="NombreNube" placeholder="Nombre de la Nube" style="width : 390px; height : 15px"><br>
+
+    <button onclick="LeerNube()"style="width : 130px; height : 20px">Traer Nubes </button>
+    <button onclick="GuardarNube()"style="width : 130px; height : 20px">Guardar Nube</button>
+    <button onclick="EditarNube()"style="width : 130px; height : 20px">Actualizar Nube</button>
+
+    <div id = "ListaNubes"></div>
+
+    <h1>Clientes Grupo 0</h1>
+
+    <input type="number" id="IdCliente" placeholder="Id del Cliente" style="width : 390px; height : 15px"><br>
+    <input type="text" id="NombreCliente" placeholder="Nombre del Cliente" style="width : 390px; height : 15px"><br>
+    <input type="text" id="CorreoCliente" placeholder="Correo del Cliente" style="width : 390px; height : 15px"><br>
+    <input type="number" id="EdadCliente" placeholder="Edad del Cliente" style="width : 390px; height : 15px"><br>
+    
+    <button onclick="LeerCliente()"style="width : 130px; height : 20px">Traer Clientes </button>
+    <button onclick="GuardarCliente()"style="width : 130px; height : 20px">Guardar Cliente</button>
+    <button onclick="EditarCliente()"style="width : 130px; height : 20px">Actualizar Cliente</button>
+
+    <div id = "ListaClientes"></div>
+    
+    <h1>Mensajes Grupo 0</h1>
+    
+    <input type="number" id="IdMensaje" placeholder="Id del Mensaje" style="width : 390px; height : 15px"><br>
+    <input type="text" id="TextoMensaje" placeholder="Texto del Mensaje" style="width : 390px; height : 15px"><br>
+    
+    <button onclick="LeerMensajes()"style="width : 130px; height : 20px">Traer Mensajes</button>
+    <button onclick="GuardarMensaje()"style="width : 130px; height : 20px">Guardar Mensaje</button>
+    <button onclick="EditarMensaje()"style="width : 130px; height : 20px">Actualizar Mensaje</button>
+
+    <div id = "ListaMensajes"></div>
+</body>
+
+</html>
